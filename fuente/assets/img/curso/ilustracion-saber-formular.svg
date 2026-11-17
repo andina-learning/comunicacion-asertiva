@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img"
+     aria-label="Tres tarjetas en fila. A la izquierda, una persona con una nube de pensamiento punteada que guarda una marca de acierto: sabe cuál es la respuesta, pero no la ha dicho. Una flecha amarilla la lleva hacia dos tarjetas: en la primera, una persona con un solo globo de habla, rotulada la frase; en la segunda, dos personas frente a frente con tres globos que se alternan, rotulada la conversación completa.">
+  <!-- Ilustración de marca · Universidad Andina Virtual · comunicacion-asertiva · tema 2 (apertura)
+       Concepto (DI, párrafo que abre el tema): «Saber cuál es la respuesta asertiva no basta: hay que
+       saber formularla. Este tema le propone dos herramientas concretas para hacerlo, una para la frase
+       y otra para la conversación completa.»
+       A la izquierda, lo que se sabe y no se dice (la nube punteada); a la derecha, las dos maneras de
+       decirlo. Rótulos: fragmentos literales del párrafo. Guion en insumos/ILUSTRACIONES.md.
+       Único amarillo: la flecha que va de saber a formular, el paso que el tema enseña. -->
+  <defs>
+    <linearGradient id="ilu-saber-formular-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E6F3FA"/>
+      <stop offset="55%"  stop-color="#E8EDF5"/>
+      <stop offset="100%" stop-color="#F5F8FB"/>
+    </linearGradient>
+    <filter id="ilu-saber-formular-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#132B41" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="440" rx="18" fill="url(#ilu-saber-formular-fondo)"/>
+
+  <!-- Las tres tarjetas: saber la respuesta · la frase · la conversación completa -->
+  <g filter="url(#ilu-saber-formular-sombra)" fill="#FFFFFF">
+    <rect x="60"  y="48" width="340" height="304" rx="16"/>
+    <rect x="540" y="48" width="260" height="304" rx="16"/>
+    <rect x="830" y="48" width="310" height="304" rx="16"/>
+  </g>
+
+  <!-- ══ Saber cuál es la respuesta asertiva: la persona la tiene en la cabeza, no en la boca ══ -->
+  <g fill="none" stroke="#00417B" stroke-width="4" stroke-linecap="round">
+    <circle cx="170" cy="266" r="22"/>
+    <path d="M132 328 a38 26 0 0 1 76 0"/>
+  </g>
+  <!-- la nube de pensamiento, punteada: todavía no se ha dicho -->
+  <g fill="#E8EDF5" stroke="#132B41" stroke-width="2.5" stroke-dasharray="6 6" opacity=".55">
+    <circle cx="196" cy="222" r="7"/>
+    <circle cx="214" cy="198" r="11"/>
+  </g>
+  <ellipse cx="270" cy="138" rx="86" ry="52" fill="#E8EDF5" stroke="#132B41" stroke-width="2.5"
+           stroke-dasharray="6 6" opacity=".55"/>
+  <!-- la respuesta que ya sabe -->
+  <path d="M240 140 l20 20 l40 -44" fill="none" stroke="#00417B" stroke-width="7"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- ÚNICO AMARILLO: de saber la respuesta a formularla -->
+  <g fill="none" stroke="#F0B443" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="424" y1="200" x2="506" y2="200"/>
+    <path d="M482 172 l28 28 l-28 28"/>
+  </g>
+
+  <!-- ══ Una herramienta para la frase: una persona, un solo globo ══ -->
+  <g fill="none" stroke="#00417B" stroke-width="4" stroke-linecap="round">
+    <circle cx="612" cy="266" r="22"/>
+    <path d="M574 328 a38 26 0 0 1 76 0"/>
+  </g>
+  <path d="M652 126 h110 a12 12 0 0 1 12 12 v70 a12 12 0 0 1 -12 12 h-80 l-26 22 v-22 h-4 a12 12 0 0 1 -12 -12 v-70 a12 12 0 0 1 12 -12 z"
+        fill="#E8EDF5" stroke="#00417B" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#132B41" opacity=".28">
+    <rect x="666" y="152" width="80" height="8" rx="4"/>
+    <rect x="666" y="176" width="58" height="8" rx="4"/>
+  </g>
+
+  <!-- ══ Otra para la conversación completa: dos personas, los globos se alternan ══ -->
+  <g fill="none" stroke="#00417B" stroke-width="4" stroke-linecap="round">
+    <circle cx="884" cy="266" r="22"/>
+    <path d="M846 328 a38 26 0 0 1 76 0"/>
+    <circle cx="1086" cy="266" r="22"/>
+    <path d="M1048 328 a38 26 0 0 1 76 0"/>
+  </g>
+  <!-- globo 1, de la izquierda -->
+  <path d="M884 70 h100 a10 10 0 0 1 10 10 v30 a10 10 0 0 1 -10 10 h-78 l-18 14 v-14 h-4 a10 10 0 0 1 -10 -10 v-30 a10 10 0 0 1 10 -10 z"
+        fill="#E8EDF5" stroke="#00417B" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="896" y="88" width="72" height="7" rx="3.5" fill="#132B41" opacity=".28"/>
+  <!-- globo 2, de la derecha -->
+  <path d="M1086 130 h-100 a10 10 0 0 0 -10 10 v28 a10 10 0 0 0 10 10 h78 l18 14 v-14 h4 a10 10 0 0 0 10 -10 v-28 a10 10 0 0 0 -10 -10 z"
+        fill="#FFFFFF" stroke="#00417B" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="992" y="147" width="72" height="7" rx="3.5" fill="#132B41" opacity=".28"/>
+  <!-- globo 3, de la izquierda otra vez -->
+  <path d="M884 182 h100 a10 10 0 0 1 10 10 v24 a10 10 0 0 1 -10 10 h-78 l-18 12 v-12 h-4 a10 10 0 0 1 -10 -10 v-24 a10 10 0 0 1 10 -10 z"
+        fill="#E8EDF5" stroke="#00417B" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="896" y="198" width="56" height="7" rx="3.5" fill="#132B41" opacity=".28"/>
+
+  <!-- Los rótulos: las palabras del DI -->
+  <g font-family="Manrope, system-ui, sans-serif" font-size="17" font-weight="600" fill="#132B41" text-anchor="middle">
+    <text x="230" y="394">la respuesta asertiva</text>
+    <text x="670" y="394">la frase</text>
+    <text x="985" y="394">la conversación completa</text>
+  </g>
+</svg>
