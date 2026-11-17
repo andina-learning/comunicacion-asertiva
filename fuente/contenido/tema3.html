@@ -1,13 +1,187 @@
       <header class="ova-screen__head" data-reveal>
+        <!-- Eyebrow: el numeral del tema; título: el del DI, «3. Dar y recibir retroalimentación», con el numeral
+             en el eyebrow (INSTITUCION §2). Lead: el párrafo de apertura del tema, literal. -->
         <div class="ova-screen__eyebrow">Tema {{NUM}}</div>
-        <h1 class="ova-screen__title" data-ova-hueco="título del tema, literal del DI"></h1>
-        <p class="ova-screen__lead" data-ova-hueco="propósito del tema, literal de la tabla del DI"></p>
+        <h1 class="ova-screen__title">Dar y recibir retroalimentación</h1>
+        <p class="ova-screen__lead">La retroalimentación es la conversación en la que la asertividad se pone más a prueba, porque toca el trabajo de una persona y, muchas veces, su autoestima. Darla bien y recibirla bien son dos habilidades distintas, y las dos se aprenden.</p>
       </header>
 
-      <!-- Una sección vacía y ningún componente: /ova-maquetar elige cada componente desde el DI
-           y agrega las secciones que falten, cada una con su ancla en el menú de ova.config.js -->
-      <section class="ua-seccion" id="tema{{NUM}}-1" data-reveal>
-        <h2 class="ua-seccion__titulo"><span data-ova-hueco="título de la sección {{NUM}}.1, literal del DI"></span></h2>
+      <!-- Ilustración explicativa (catálogo) · apertura del tema 3, en el lugar de la foto Imagen-03 (retirada por
+           el arquitecto, 2026-11-17, con su pie del DI «Recibir una crítica empieza por escucharla completa.»: se avisa
+           al cliente). Rótulos literales del párrafo de apertura. EDITORIAL · el pie y el alt.
+           Guion en insumos/ILUSTRACIONES.md. -->
+      <figure class="ova-ilustracion" data-reveal>
+        <img src="assets/img/curso/ilustracion-darla-recibirla.svg"
+             alt="Una tarjeta partida en dos por una línea punteada. A la izquierda, una persona da una retroalimentación: de ella sale un globo de habla amarillo que cruza la línea. A la derecha, otra persona la recibe con una hoja de su trabajo en la mano. Bajo la primera se lee darla bien; bajo la segunda, recibirla bien." />
+        <figcaption>Una misma retroalimentación, dos lados: quien la da y quien la recibe.</figcaption>
+      </figure>
+
+      <section class="ua-seccion" id="tema3-1" data-reveal>
+        <h2 class="ua-seccion__titulo">3.1 El modelo SCI para dar retroalimentación</h2>
       </section>
 
-      <div data-ova-hueco="contenido de la sección {{NUM}}.1: el componente lo elige /ova-maquetar desde el DI" data-reveal></div>
+      <p data-reveal>El <strong>modelo SCI</strong> —situación, comportamiento, impacto— fue desarrollado por el Center for Creative Leadership para que la retroalimentación se centre en lo observable y no en la persona (Weitzel, 2000).</p>
+
+      <!-- Slider de pasos (catálogo) · «El modelo SCI, paso a paso». Instrucción y situación literales del Word.
+           El Word no trae «Imagen sugerida»: cada paso va sin imagen. «Paso N» no sale: el número lo pone el componente. -->
+      <h3 class="ova-rotulo" data-reveal><strong>El modelo SCI, paso a paso</strong></h3>
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Avance por los pasos y observe cómo Lucía arma la retroalimentación para un integrante de su equipo.</p>
+      <div class="ova-tabs ova-tabs--pasos" data-reveal>
+        <p class="ova-tabs__situacion"><strong>Situación:</strong> Un integrante del equipo de Lucía entregó tarde el informe semanal por segunda vez.</p>
+        <div class="ova-tabs__marco">
+          <div class="ova-tabs__nav">
+            <button class="ova-tabs__btn is-active"><span class="ova-tabs__num">1</span><span>Situación</span></button>
+            <button class="ova-tabs__btn"><span class="ova-tabs__num">2</span><span>Comportamiento</span></button>
+            <button class="ova-tabs__btn"><span class="ova-tabs__num">3</span><span>Impacto</span></button>
+            <button class="ova-tabs__btn"><span class="ova-tabs__num">4</span><span>Conversación</span></button>
+          </div>
+          <div class="ova-tabs__panels">
+            <div class="ova-tabs__panel is-active">
+              <div class="ova-tabs__media">
+                <div>
+                  <h4><strong>Situación</strong></h4>
+                  <p>Ubique cuándo y dónde ocurrió. «En la entrega del informe semanal de ayer…».</p>
+                </div>
+              </div>
+            </div>
+            <div class="ova-tabs__panel">
+              <div class="ova-tabs__media">
+                <div>
+                  <h4><strong>Comportamiento</strong></h4>
+                  <p>Describa lo que hizo, sin interpretarlo. «…el informe llegó a las seis de la tarde, y el plazo era el mediodía…».</p>
+                </div>
+              </div>
+            </div>
+            <div class="ova-tabs__panel">
+              <div class="ova-tabs__media">
+                <div>
+                  <h4><strong>Impacto</strong></h4>
+                  <p>Explique el efecto que tuvo. «…y no pude revisarlo antes de enviarlo al cliente, así que salió con dos errores».</p>
+                </div>
+              </div>
+            </div>
+            <div class="ova-tabs__panel">
+              <div class="ova-tabs__media">
+                <div>
+                  <h4><strong>Conversación</strong></h4>
+                  <p>Cierre con una pregunta que abra el diálogo. «¿Qué pasó, y cómo podemos evitar que se repita?».</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ova-tabs__pie">
+            <span class="ova-tabs__cuenta" aria-live="polite"></span>
+            <div class="ova-tabs__flechas">
+              <button type="button" class="ova-tabs__flecha" data-ova-paso="-1" aria-label="Paso anterior"><iconify-icon icon="mdi:arrow-left"></iconify-icon></button>
+              <button type="button" class="ova-tabs__flecha" data-ova-paso="1" aria-label="Paso siguiente"><iconify-icon icon="mdi:arrow-right"></iconify-icon></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloque destacado - fondo claro (catálogo) · «Para tener en cuenta». Icono decorativo (editorial). -->
+      <div class="ova-destacados" data-reveal>
+        <div class="ova-destacado">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:clock-check-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Para tener en cuenta</strong></h4>
+            <p>Dé la retroalimentación <strong>lo más cerca posible del hecho y en privado</strong>. Una retroalimentación que llega semanas después pierde precisión, y una que se da delante del equipo se convierte en una exposición pública.</p>
+          </div>
+        </div>
+      </div>
+
+      <section class="ua-seccion" id="tema3-2" data-reveal>
+        <h2 class="ua-seccion__titulo">3.2 Cómo responder a una crítica</h2>
+      </section>
+
+      <p data-reveal>Recibir una crítica activa casi siempre el reflejo de defenderse.</p>
+
+      <!-- Respiro (pieza propia de Andina, INSTITUCION §3) · el remate literal del párrafo de apertura de 3.2, repartido
+           en dos (principio 7). EDITORIAL · sacar la frase a banda (diagramador, revisión; aprobado por el arquitecto, 2026-11-16). -->
+      <div class="ua-respiro" data-reveal>
+        <p>Responder de forma asertiva no significa aceptar todo lo que se dice, sino escucharlo antes de decidir qué hacer con ello.</p>
+      </div>
+
+      <!-- Listado de pasos vertical (catálogo) · «Cuatro pasos para responder a una crítica». Títulos en negrilla en el Word.
+           «Paso N» no sale: el número lo pone el componente. -->
+      <h3 class="ova-rotulo" data-reveal><strong>Cuatro pasos para responder a una crítica</strong></h3>
+      <div class="ova-stepper ova-stepper--lista" data-reveal>
+        <div class="ova-step"><div class="ova-step__num"><span>01</span></div><div class="ova-step__card"><h3><strong>Escuche hasta el final</strong></h3><p>No interrumpa ni prepare su defensa mientras el otro habla.</p></div></div>
+        <div class="ova-step"><div class="ova-step__num"><span>02</span></div><div class="ova-step__card"><h3><strong>Pregunte para entender</strong></h3><p>Pida un ejemplo concreto si la crítica es general. «¿Me puedes dar un ejemplo?».</p></div></div>
+        <div class="ova-step"><div class="ova-step__num"><span>03</span></div><div class="ova-step__card"><h3><strong>Reconozca lo que es cierto</strong></h3><p>Acepte la parte de la crítica que corresponde a los hechos, aunque no esté de acuerdo con todo.</p></div></div>
+        <div class="ova-step"><div class="ova-step__num"><span>04</span></div><div class="ova-step__card"><h3><strong>Responda o acuerde un cambio</strong></h3><p>Explique su punto de vista o comprométase a un cambio concreto.</p></div></div>
+      </div>
+
+      <p data-reveal>Así se ve la diferencia en una conversación real con un jefe.</p>
+
+      <!-- Pestañas - línea (catálogo) · «El mismo diálogo, en dos versiones». Instrucción literal del Word.
+           El Word no trae imagen por pestaña: va un icono (editorial), como indica la guía de la pieza.
+           Cada diálogo, repartido en una línea por intervención y la de cierre (principio 7; aprobado por el arquitecto, 2026-11-16). -->
+      <h3 class="ova-rotulo" data-reveal><strong>El mismo diálogo, en dos versiones</strong></h3>
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Lea las dos versiones del diálogo y compare cómo responde Lucía a la crítica de su jefe.</p>
+      <div class="ova-tabs" data-reveal>
+        <div class="ova-tabs__nav">
+          <button class="ova-tabs__btn is-active"><strong>Versión defensiva</strong></button>
+          <button class="ova-tabs__btn"><strong>Versión asertiva</strong></button>
+        </div>
+        <div class="ova-tabs__panels">
+          <div class="ova-tabs__panel is-active"><div class="ova-tabs__media">
+            <div><p>Jefe: «El informe del cliente tenía errores».<br>
+Lucía: «No es mi culpa, me lo pasaron tarde y tenía otros tres proyectos».<br>
+La conversación termina en una discusión sobre quién tiene la culpa.</p></div>
+            <div class="ova-tabs__icono" aria-hidden="true"><iconify-icon icon="mdi:shield-alert-outline"></iconify-icon></div>
+          </div></div>
+          <div class="ova-tabs__panel"><div class="ova-tabs__media">
+            <div><p>Jefe: «El informe del cliente tenía errores».<br>
+Lucía: «¿Cuáles encontraste? … Tienes razón, esos dos datos estaban mal. Me llegó tarde y no alcancé a revisarlo; para la próxima propongo fijar la entrega interna un día antes».<br>
+La conversación termina en un acuerdo.</p></div>
+            <div class="ova-tabs__icono" aria-hidden="true"><iconify-icon icon="mdi:handshake-outline"></iconify-icon></div>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- Bloque destacado - fondo claro (catálogo) · «Aplique lo aprendido». Las letras a), b), c) van como texto,
+           literales del Word, sin <ol> para que no salgan dos marcadores. Icono decorativo (editorial). -->
+      <div class="ova-destacados" data-reveal>
+        <div class="ova-destacado">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:pencil-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Aplique lo aprendido</strong></h4>
+            <p>Piense en una conversación difícil que tenga pendiente en su trabajo. Determine:</p>
+            <p>a) qué estilo de respuesta ha usado hasta ahora con esa persona;</p>
+            <p>b) cómo formularía su pedido con los cuatro pasos del modelo DESC;</p>
+            <p>c) qué retroalimentación le daría con el modelo SCI.</p>
+            <p>Escriba su respuesta antes de avanzar y consérvela.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lista de verificación (catálogo) · «Antes de una conversación difícil». Instrucción literal del Word.
+           El título lleva <strong> porque así viene en el Word (la pieza no lo trae); sin el «□» del Word. -->
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Marque cada punto cuando lo tenga listo.</p>
+      <div class="ova-checklist" data-reveal>
+        <div class="ova-checklist__head"><h3 style="margin:0; font-size:1.1rem;"><strong>Antes de una conversación difícil</strong></h3><div class="ova-checklist__count"><strong>0</strong> / 5</div></div>
+        <ul class="ova-checklist__list">
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Sé qué quiero conseguir con la conversación.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Puedo describir los hechos sin adjetivos ni juicios.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Formulé lo que siento y necesito en primera persona.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Tengo un pedido concreto y posible.</span></li>
+          <li class="ova-checklist__item"><span class="ova-checklist__box"><iconify-icon icon="mdi:check"></iconify-icon></span><span class="ova-checklist__text">Elegí un momento y un lugar privados.</span></li>
+        </ul>
+      </div>
+
+      <p data-reveal>Para cerrar este tema, descargue la guía con las frases y los modelos de la unidad.</p>
+
+      <!-- Descarga - con icono · fondo claro (catálogo) · PDF1 del DI (insumos/descargas/PDF1.pdf).
+           Instrucción y textos literales; el título lleva <strong> porque así viene en el Word. Icono (editorial). -->
+      <p class="ova-llamado" data-reveal><span class="ova-llamado__mano" aria-hidden="true"><iconify-icon icon="mdi:cursor-pointer"></iconify-icon></span>Descargue la guía y téngala a mano antes de su próxima conversación difícil.</p>
+      <div class="ova-destacados" data-reveal>
+        <div class="ova-destacado ova-destacado--boton">
+          <span class="ova-destacado__icono" aria-hidden="true"><iconify-icon icon="mdi:file-document-outline"></iconify-icon></span>
+          <div>
+            <h4 class="ova-destacado__titulo"><strong>Guía de comunicación asertiva</strong></h4>
+            <p>Los tres estilos de respuesta, los modelos DESC y SCI, y frases para decir que no (PDF, 2 páginas)</p>
+          </div>
+          <a class="ova-btn ova-btn--primary ova-destacado__boton" href="assets/descargas/guia-comunicacion-asertiva.pdf" target="_blank" rel="noopener" download aria-label="Descargar la Guía de comunicación asertiva en PDF"><iconify-icon icon="mdi:download"></iconify-icon> Descargar</a>
+        </div>
+      </div>

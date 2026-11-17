@@ -74,10 +74,13 @@ module.exports = {
     /* Conclusión y Glosario: ocultos por defecto (decisión del 2026-10-10, la de la Unidad 3 de
        Scala). Sus pantallas siguen en contenido/; para mostrarlas, quita el // de su línea.
        En Andina la conclusión se llama «Síntesis de cierre» (pedido de Andina, 2026-10-28). */
-    // { id: 'conclusion',   titulo: 'Síntesis de cierre',      tipo: 'especial', icon: 'mdi:flag-outline' },
+    { id: 'conclusion',   titulo: 'Síntesis de cierre',      tipo: 'especial', icon: 'mdi:flag-outline' },
     { id: 'evaluacion',   titulo: 'Actividad formativa', tipo: 'especial', icon: 'mdi:clipboard-check-outline' },
     // { id: 'glosario',     titulo: 'Glosario',                tipo: 'especial', icon: 'mdi:book-open-variant-outline' },
     { id: 'referencias',  titulo: 'Referencias',             tipo: 'especial', icon: 'mdi:bookmark-outline' },
+    /* Créditos: pantalla propia después de Referencias (KIT-018), con la sección «Créditos» del Word
+       (agregada a pedido del arquitecto, 2026-11-16). */
+    { id: 'creditos',     titulo: 'Créditos',                tipo: 'especial', icon: 'mdi:account-group-outline' },
   ],
 
   /* REFERENCIAS · APA literal del DI §Referencias. Estilo de la línea: autor y año sin

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img"
+     aria-label="Una tarjeta partida en dos por una línea punteada. A la izquierda, una persona da una retroalimentación: de ella sale un globo de habla amarillo que cruza la línea. A la derecha, otra persona la recibe con una hoja de su trabajo en la mano. Bajo la primera se lee darla bien; bajo la segunda, recibirla bien.">
+  <!-- Ilustración de marca · Universidad Andina Virtual · comunicacion-asertiva · tema 3 (apertura)
+       Concepto (DI, párrafo que abre el tema): «La retroalimentación es la conversación en la que la
+       asertividad se pone más a prueba, porque toca el trabajo de una persona y, muchas veces, su
+       autoestima. Darla bien y recibirla bien son dos habilidades distintas, y las dos se aprenden.»
+       Una sola conversación, dos lados: quien la da y quien la recibe; la línea punteada separa las dos
+       habilidades. La hoja en la mano de quien recibe es «el trabajo de una persona».
+       Rótulos: fragmentos literales del párrafo. Guion en insumos/ILUSTRACIONES.md.
+       Único amarillo: el globo, la retroalimentación que va de un lado al otro. -->
+  <defs>
+    <linearGradient id="ilu-darla-recibirla-fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#E6F3FA"/>
+      <stop offset="55%"  stop-color="#E8EDF5"/>
+      <stop offset="100%" stop-color="#F5F8FB"/>
+    </linearGradient>
+    <filter id="ilu-darla-recibirla-sombra" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#132B41" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="440" rx="18" fill="url(#ilu-darla-recibirla-fondo)"/>
+
+  <!-- Una sola tarjeta: es una sola conversación -->
+  <rect x="60" y="48" width="1080" height="304" rx="16" fill="#FFFFFF" filter="url(#ilu-darla-recibirla-sombra)"/>
+
+  <!-- Dos habilidades distintas: la línea punteada parte la conversación en sus dos lados -->
+  <line x1="600" y1="72" x2="600" y2="328" stroke="#132B41" stroke-width="2.5" stroke-dasharray="6 6"
+        stroke-linecap="round" opacity=".35"/>
+
+  <!-- ══ Darla bien: la persona que da la retroalimentación ══ -->
+  <g fill="none" stroke="#00417B" stroke-width="4" stroke-linecap="round">
+    <circle cx="300" cy="266" r="22"/>
+    <path d="M262 328 a38 26 0 0 1 76 0"/>
+  </g>
+
+  <!-- ÚNICO AMARILLO: la retroalimentación, un globo que sale de quien la da y llega a quien la recibe -->
+  <path d="M372 96 h458 a14 14 0 0 1 14 14 v68 a14 14 0 0 1 -14 14 h-406 l-62 46 l14 -46 h-4 a14 14 0 0 1 -14 -14 v-68 a14 14 0 0 1 14 -14 z"
+        fill="#F0B443" stroke="#00417B" stroke-width="3" stroke-linejoin="round"/>
+  <g fill="#132B41" opacity=".45">
+    <rect x="394" y="124" width="300" height="9" rx="4.5"/>
+    <rect x="394" y="152" width="210" height="9" rx="4.5"/>
+  </g>
+
+  <!-- ══ Recibirla bien: la persona que la recibe, con su trabajo en la mano ══ -->
+  <g fill="none" stroke="#00417B" stroke-width="4" stroke-linecap="round">
+    <circle cx="900" cy="266" r="22"/>
+    <path d="M862 328 a38 26 0 0 1 76 0"/>
+  </g>
+  <!-- la hoja: «toca el trabajo de una persona» -->
+  <g>
+    <rect x="958" y="236" width="70" height="88" rx="6" fill="#E8EDF5" stroke="#00417B" stroke-width="3"
+          transform="rotate(8 993 280)"/>
+    <g fill="#132B41" opacity=".28" transform="rotate(8 993 280)">
+      <rect x="970" y="254" width="46" height="6" rx="3"/>
+      <rect x="970" y="270" width="38" height="6" rx="3"/>
+      <rect x="970" y="286" width="46" height="6" rx="3"/>
+      <rect x="970" y="302" width="28" height="6" rx="3"/>
+    </g>
+  </g>
+
+  <!-- Los rótulos: las palabras del DI -->
+  <g font-family="Manrope, system-ui, sans-serif" font-size="17" font-weight="600" fill="#132B41" text-anchor="middle">
+    <text x="300" y="394">darla bien</text>
+    <text x="900" y="394">recibirla bien</text>
+  </g>
+</svg>
